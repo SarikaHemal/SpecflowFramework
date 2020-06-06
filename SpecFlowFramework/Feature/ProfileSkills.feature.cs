@@ -103,32 +103,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table10.AddRow(new string[] {
+                table12.AddRow(new string[] {
                             "Myra.bamania@gmail.com",
                             "123456"});
 #line 9
- testRunner.Given("I login with valid user", ((string)(null)), table10, "Given ");
+ testRunner.Given("I login with valid user", ((string)(null)), table12, "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
                             "Skill",
                             "SkillLevel"});
-                table11.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "QA",
                             "Intermediate"});
 #line 12
- testRunner.And("I can add this Skills", ((string)(null)), table11, "And ");
+ testRunner.And("I can add this Skills", ((string)(null)), table13, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
                             "Skill",
                             "SkillLevel"});
-                table12.AddRow(new string[] {
+                table14.AddRow(new string[] {
                             "QA",
                             "Intermediate"});
 #line 15
- testRunner.Then("I can see added Skills", ((string)(null)), table12, "Then ");
+ testRunner.Then("I can see added Skills", ((string)(null)), table14, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -163,45 +163,45 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table13.AddRow(new string[] {
+                table15.AddRow(new string[] {
                             "Myra.bamania@gmail.com",
                             "123456"});
 #line 21
- testRunner.Given("I login with valid user", ((string)(null)), table13, "Given ");
+ testRunner.Given("I login with valid user", ((string)(null)), table15, "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
                             "Skill",
                             "SkillLevel"});
-                table14.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "QA",
                             "Intermediate"});
 #line 24
- testRunner.And("I can delete this Skills", ((string)(null)), table14, "And ");
+ testRunner.And("I can delete this Skills", ((string)(null)), table16, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
                             "Skill",
                             "SkillLevel"});
-                table15.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "QA",
                             "Intermediate"});
 #line 27
- testRunner.Then("I cannot see deleted Skills", ((string)(null)), table15, "Then ");
+ testRunner.Then("I cannot see deleted Skills", ((string)(null)), table17, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("as seller I should able to edie skills")]
+        [NUnit.Framework.DescriptionAttribute("as seller I should able to edit skills")]
         [NUnit.Framework.CategoryAttribute("automate")]
-        public virtual void AsSellerIShouldAbleToEdieSkills()
+        public virtual void AsSellerIShouldAbleToEditSkills()
         {
             string[] tagsOfScenario = new string[] {
                     "automate"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("as seller I should able to edie skills", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("as seller I should able to edit skills", null, new string[] {
                         "automate"});
 #line 32
 this.ScenarioInitialize(scenarioInfo);
@@ -223,40 +223,40 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table16.AddRow(new string[] {
+                table18.AddRow(new string[] {
                             "Myra.bamania@gmail.com",
                             "123456"});
 #line 33
- testRunner.Given("I login with valid user", ((string)(null)), table16, "Given ");
+ testRunner.Given("I login with valid user", ((string)(null)), table18, "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
                             "OldSkill",
                             "OldSkillLevel",
                             "NewSkill",
                             "NewSkillLevel"});
-                table17.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "QA",
                             "Intermediate",
                             "Devloper",
                             "Beginner"});
 #line 36
- testRunner.And("I can edit this Skills", ((string)(null)), table17, "And ");
+ testRunner.And("I can edit this Skills", ((string)(null)), table19, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table20 = new TechTalk.SpecFlow.Table(new string[] {
                             "OldSkill",
                             "OldSkillLevel",
                             "NewSkill",
                             "NewSkillLevel"});
-                table18.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "QA",
                             "Intermediate",
                             "Devloper",
                             "Beginner"});
 #line 39
- testRunner.Then("I can see edited Skills", ((string)(null)), table18, "Then ");
+ testRunner.Then("I can see edited Skills", ((string)(null)), table20, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

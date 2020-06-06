@@ -461,14 +461,11 @@ namespace MarsFramework
             }
             else
             {
-                column = column + 1;
+                
                 Thread.Sleep(2000);
-                driver.FindElement(By.CssSelector("#account-profile-section > div > section:nth-child(3) > div > div > div > div.eight.wide.column > " +
-                    "form > div.ui.bottom.attached.tab.segment.tooltip-target.active >" +
-                    " div > div.twelve.wide.column.scrollTable > div > table > tbody:nth-child("+column+") > tr > td.right.aligned > span:nth-child(1) > i"));
-                //driver.FindElement(By.XPath("//*[@id='account - profile - section']" +
-                //    "/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]" +
-                //    "/div/table/tbody[" + column + "]/tr/td[3]/span[1]/i")).Clicks();
+                driver.FindElement(By.XPath("//*[@id='account - profile - section']" +
+                    "/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]" +
+                    "/div/table/tbody[" + column + "]/tr/td[3]/span[1]/i")).Clicks();
                 Thread.Sleep(1000);
                 IWebElement SkillTextbox = driver.FindElement(By.XPath("//input[@placeholder='Add Skill']"));
                 SkillTextbox.Clear();

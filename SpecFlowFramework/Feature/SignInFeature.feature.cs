@@ -102,14 +102,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table19.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Myra.bamania@gmail.com",
                             "123456"});
 #line 6
- testRunner.Given("I login with valid user", ((string)(null)), table19, "Given ");
+ testRunner.Given("I login with valid user", ((string)(null)), table21, "Given ");
 #line hidden
 #line 9
  testRunner.Then("I can navigate to profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");

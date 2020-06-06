@@ -29,7 +29,7 @@ Scenario: as seller I should able to Delete skills
 	| QA	|Intermediate   |
 
 @automate
-Scenario: as seller I should able to edie skills
+Scenario: as seller I should able to edit skills
 	Given I login with valid user
 	|Email				    |Password|
 	|Myra.bamania@gmail.com |123456  |
