@@ -103,32 +103,208 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table1.AddRow(new string[] {
+                table11.AddRow(new string[] {
                             "Myra.bamania@gmail.com",
                             "123456"});
 #line 9
- testRunner.Given("I login with valid user", ((string)(null)), table1, "Given ");
+ testRunner.Given("I login with valid user", ((string)(null)), table11, "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
                             "University",
                             "Country",
-                            "Tital",
+                            "Title",
                             "Degree",
                             "GraduationYear"});
-                table2.AddRow(new string[] {
+                table12.AddRow(new string[] {
                             "Auckland Univercity",
                             "New Zealand",
                             "B.Tech",
                             "Bachlor",
                             "2005"});
 #line 12
- testRunner.And("I can add this education", ((string)(null)), table2, "And ");
+ testRunner.And("I can add this education", ((string)(null)), table12, "And ");
 #line hidden
+                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
+                            "University",
+                            "Country",
+                            "Title",
+                            "Degree",
+                            "GraduationYear"});
+                table13.AddRow(new string[] {
+                            "Auckland Univercity",
+                            "New Zealand",
+                            "B.Tech",
+                            "Bachlor",
+                            "2005"});
 #line 15
- testRunner.Then("I can see added education", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I can see added education", ((string)(null)), table13, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("as seller I should able to delete Education")]
+        [NUnit.Framework.CategoryAttribute("automate")]
+        public virtual void AsSellerIShouldAbleToDeleteEducation()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "automate"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("as seller I should able to delete Education", null, new string[] {
+                        "automate"});
+#line 20
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Email",
+                            "Password"});
+                table14.AddRow(new string[] {
+                            "Myra.bamania@gmail.com",
+                            "123456"});
+#line 21
+ testRunner.Given("I login with valid user", ((string)(null)), table14, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
+                            "University",
+                            "Country",
+                            "Title",
+                            "Degree",
+                            "GraduationYear"});
+                table15.AddRow(new string[] {
+                            "Auckland Univercity",
+                            "New Zealand",
+                            "B.Tech",
+                            "Bachlor",
+                            "2005"});
+#line 24
+ testRunner.And("I can delete this education", ((string)(null)), table15, "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
+                            "University",
+                            "Country",
+                            "Title",
+                            "Degree",
+                            "GraduationYear"});
+                table16.AddRow(new string[] {
+                            "Auckland Univercity",
+                            "New Zealand",
+                            "B.Tech",
+                            "Bachlor",
+                            "2005"});
+#line 27
+ testRunner.Then("I cannot see deleted education", ((string)(null)), table16, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("as seller I should able to edit Education")]
+        [NUnit.Framework.CategoryAttribute("automate")]
+        public virtual void AsSellerIShouldAbleToEditEducation()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "automate"};
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("as seller I should able to edit Education", null, new string[] {
+                        "automate"});
+#line 32
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Email",
+                            "Password"});
+                table17.AddRow(new string[] {
+                            "Myra.bamania@gmail.com",
+                            "123456"});
+#line 33
+ testRunner.Given("I login with valid user", ((string)(null)), table17, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
+                            "University",
+                            "Country",
+                            "Title",
+                            "Degree",
+                            "GraduationYear",
+                            "NewUniversity",
+                            "NewCountry",
+                            "NewTitle",
+                            "NewDegree",
+                            "NewGraduationYear"});
+                table18.AddRow(new string[] {
+                            "Auckland Univercity",
+                            "New Zealand",
+                            "B.Tech",
+                            "Bachlor",
+                            "2005",
+                            "Waikato",
+                            "New Zealand",
+                            "B.Sc",
+                            "Master",
+                            "2008"});
+#line 36
+ testRunner.And("I can edit this education", ((string)(null)), table18, "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
+                            "University",
+                            "Country",
+                            "Title",
+                            "Degree",
+                            "GraduationYear",
+                            "NewUniversity",
+                            "NewCountry",
+                            "NewTitle",
+                            "NewDegree",
+                            "NewGraduationYear"});
+                table19.AddRow(new string[] {
+                            "Auckland Univercity",
+                            "New Zealand",
+                            "B.Tech",
+                            "Bachlor",
+                            "2005",
+                            "Waikato",
+                            "New Zealand",
+                            "B.Sc",
+                            "Master",
+                            "2008"});
+#line 39
+ testRunner.Then("I can see edited education", ((string)(null)), table19, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -103,32 +103,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table20 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table3.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "Myra.bamania@gmail.com",
                             "123456"});
 #line 9
- testRunner.Given("I login with valid user", ((string)(null)), table3, "Given ");
+ testRunner.Given("I login with valid user", ((string)(null)), table20, "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
                             "Language",
                             "LanguageLevel"});
-                table4.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "English",
                             "Basic"});
 #line 12
- testRunner.And("I can add this language", ((string)(null)), table4, "And ");
+ testRunner.And("I can add this language", ((string)(null)), table21, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
                             "Language",
                             "LanguageLevel"});
-                table5.AddRow(new string[] {
+                table22.AddRow(new string[] {
                             "English",
                             "Basic"});
 #line 15
- testRunner.Then("I can see added language", ((string)(null)), table5, "Then ");
+ testRunner.Then("I can see added language", ((string)(null)), table22, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -163,32 +163,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table6.AddRow(new string[] {
+                table23.AddRow(new string[] {
                             "Myra.bamania@gmail.com",
                             "123456"});
 #line 21
- testRunner.Given("I login with valid user", ((string)(null)), table6, "Given ");
+ testRunner.Given("I login with valid user", ((string)(null)), table23, "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table24 = new TechTalk.SpecFlow.Table(new string[] {
                             "Language",
                             "LanguageLevel"});
-                table7.AddRow(new string[] {
+                table24.AddRow(new string[] {
                             "English",
                             "Basic"});
 #line 24
- testRunner.And("I can delete this language", ((string)(null)), table7, "And ");
+ testRunner.And("I can delete this language", ((string)(null)), table24, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table25 = new TechTalk.SpecFlow.Table(new string[] {
                             "Language",
                             "LanguageLevel"});
-                table8.AddRow(new string[] {
+                table25.AddRow(new string[] {
                             "English",
                             "Basic"});
 #line 27
- testRunner.Then("I cannot see deleted language", ((string)(null)), table8, "Then ");
+ testRunner.Then("I cannot see deleted language", ((string)(null)), table25, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -223,40 +223,40 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
                             "Password"});
-                table9.AddRow(new string[] {
+                table26.AddRow(new string[] {
                             "Myra.bamania@gmail.com",
                             "123456"});
 #line 33
- testRunner.Given("I login with valid user", ((string)(null)), table9, "Given ");
+ testRunner.Given("I login with valid user", ((string)(null)), table26, "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
                             "OldLanguage",
                             "OldLanguageLevel",
                             "NewLanguage",
                             "NewLanguageLevel"});
-                table10.AddRow(new string[] {
+                table27.AddRow(new string[] {
                             "English",
                             "Basic",
                             "Hindi",
                             "Fluent"});
 #line 36
- testRunner.And("I can edit this language", ((string)(null)), table10, "And ");
+ testRunner.And("I can edit this language", ((string)(null)), table27, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
                             "OldLanguage",
                             "OldLanguageLevel",
                             "NewLanguage",
                             "NewLanguageLevel"});
-                table11.AddRow(new string[] {
+                table28.AddRow(new string[] {
                             "English",
                             "Basic",
                             "Hindi",
                             "Fluent"});
 #line 39
- testRunner.Then("I can see edited language", ((string)(null)), table11, "Then ");
+ testRunner.Then("I can see edited language", ((string)(null)), table28, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

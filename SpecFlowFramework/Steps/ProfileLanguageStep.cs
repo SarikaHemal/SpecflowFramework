@@ -49,7 +49,6 @@ namespace SpecFlowFramework.Steps
 
         [Given(@"I can delete this language")]
         [Obsolete]
-        [Test]
         public void GivenICanDeleteThisLanguage(Table table)
         {
             ProfileProperties values = table.CreateInstance<ProfileProperties>();

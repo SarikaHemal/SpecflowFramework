@@ -67,14 +67,13 @@ namespace SpecFlowFramework
             if (scenarioContext.TestError!=null)
             {
                 CommonMethod.test.Fail(scenarioContext.TestError.Message)
-                    .Log(Status.Error,scenarioContext.TestError.Message + ": Image example: " + img);
+                    .Log(Status.Error,scenarioContext.TestError.Message +": Image example: " + img);
             }
             else
             {
                 CommonMethod.test.Log(Status.Pass, scenarioContext.StepContext.StepInfo.Text + ": Image example: " + img);
             }
-            
-            
+
             
         }
 

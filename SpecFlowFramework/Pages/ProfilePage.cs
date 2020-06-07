@@ -180,7 +180,7 @@ namespace MarsFramework
         {
             //to navigate profile page
             Thread.Sleep(2000);
-            driver.FindElement(By.XPath("//section//div//a[@class='item'][@href='/Account/Profile']")).Click();
+            driver.FindElement(By.XPath("//section//div//a[@class='item'][@href='/Account/Profile']")).Clicks();
 
 
         }
@@ -577,13 +577,15 @@ namespace MarsFramework
             {
                 Console.WriteLine("Record not found");
             }
-            Thread.Sleep(2000);
-            driver.FindElement(By.XPath("(//i[@class='remove icon'])[3]")).Clicks();
-            //driver.FindElement(By.CssSelector("#account-profile-section > div > section:nth-child(3) >" +
-            //    " div > div > div > div.eight.wide.column > form > div.ui.bottom.attached.tab.segment.tooltip-target.active >" +
-            //    " div > div.twelve.wide.column.scrollTable > div > table > tbody:nth-child("+column+1+") > tr > td.right.aligned > span:nth-child(2) > i")).Clicks();
-            //Console.WriteLine("education deleted");
-
+            else
+            {
+                //column = column + 1;
+                driver.FindElement(By.XPath("(//i[@class='remove icon'])[" + column + "]")).Clicks();
+                //driver.FindElement(By.CssSelector("#account-profile-section > div > section:nth-child(3) >" +
+                //    " div > div > div > div.eight.wide.column > form > div.ui.bottom.attached.tab.segment.tooltip-target.active >" +
+                //    " div > div.twelve.wide.column.scrollTable > div > table > tbody:nth-child("+column+1+") > tr > td.right.aligned > span:nth-child(2) > i")).Clicks();
+                //Console.WriteLine("education deleted");
+            }
             return "Success";
         }
         [Obsolete]
@@ -599,8 +601,9 @@ namespace MarsFramework
             }
             else
             {
+                column = column + 1;
                 Thread.Sleep(2000);
-                driver.FindElement(By.XPath("(//i[@class='outline write icon'])[4]")).Clicks();
+                driver.FindElement(By.XPath("(//i[@class='outline write icon'])["+column+"]")).Clicks();
                 Thread.Sleep(1000);
                 IWebElement collegeTextbox = driver.FindElement(By.XPath("//input[contains(@placeholder,'College/University Name')]"));
                 collegeTextbox.Clear();
@@ -724,14 +727,14 @@ namespace MarsFramework
             {
                 Console.WriteLine("Record not found");
             }
-            column = column + 1;
-            Thread.Sleep(2000);
-            // driver.FindElement(By.XPath("(//i[@class='remove icon'])[3]")).Clicks();
-            driver.FindElement(By.CssSelector("#account-profile-section > div > section:nth-child(3) > div > div > div > div.eight.wide.column > form > div.ui.bottom.attached.tab.segment.tooltip-target.active > div.row > div.twelve.wide.column.scrollTable > " +
-                "div > table > tbody:nth-child(" + column + ") > tr > td.right.aligned > span:nth-child(2) > i")).Click();
-            //driver.FindElement(By.XPath("//*[@id='account - profile - section']/div/section[2]/div/div/div/" +
-            //  "div[3]/form/div[5]/div[1]/div[2]/div/table/tbody[" + column + "]/tr/td[4]/span[2]/i")).Clicks();
-
+            else
+            {
+                driver.FindElement(By.XPath("(//i[@class='remove icon'])[" + column + "]")).Clicks();
+                // driver.FindElement(By.CssSelector("#account-profile-section > div > section:nth-child(3) > div > div > div > div.eight.wide.column > form > div.ui.bottom.attached.tab.segment.tooltip-target.active > div.row > div.twelve.wide.column.scrollTable > " +
+                //    "div > table > tbody:nth-child(" + column + ") > tr > td.right.aligned > span:nth-child(2) > i")).Click();
+                //driver.FindElement(By.XPath("//*[@id='account - profile - section']/div/section[2]/div/div/div/" +
+                //  "div[3]/form/div[5]/div[1]/div[2]/div/table/tbody[" + column + "]/tr/td[4]/span[2]/i")).Clicks();
+            }
             return "Success";
         }
         [Obsolete]
@@ -788,7 +791,7 @@ namespace MarsFramework
         }
         #endregion
         [Obsolete]
-        public ProfilePage ChangePassword()
+        public void ChangePassword(string CurrentPassword,string NewPassword)
         {
             Actions action = new Actions(driver);
             action.MoveToElement(UserName).Build().Perform();
@@ -799,14 +802,13 @@ namespace MarsFramework
             //Enter the password 
             //IWebElement CurrentPassword = driver.FindElement(By.XPath("//input[@placeholder='Current Password']"));
             //CurrentPassword.SendKeys(Driver.ExcelLib.ReadData(2, "Password"));
-            IWebElement CurrentPassword = driver.FindElement(By.XPath("//input[@placeholder='Current Password']"));
-            CurrentPassword.SendKeys("234567");
-            driver.FindElement(By.XPath("//input[@placeholder='New Password']")).EnterText("123456");
-            driver.FindElement(By.XPath("//input[@placeholder='Confirm Password']")).EnterText("123456");
+            IWebElement Password = driver.FindElement(By.XPath("//input[@placeholder='Current Password']"));
+            Password.SendKeys(CurrentPassword);
+            driver.FindElement(By.XPath("//input[@placeholder='New Password']")).EnterText(NewPassword);
+            driver.FindElement(By.XPath("//input[@placeholder='Confirm Password']")).EnterText(NewPassword);
             driver.FindElement(By.XPath("//button[@type='button'][contains(.,'Save')]")).Clicks();
-            return new ProfilePage(driver);
-
-
+            driver.Navigate().Back();
+            
         }
 
 

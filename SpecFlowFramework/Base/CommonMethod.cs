@@ -12,7 +12,10 @@ namespace SkillsSwap.Base
     public class CommonMethod
     {
         public static IWebDriver driver { get; set; }
-        
+       
+        //Wait
+        #region Wait
+               
         public static void Wait(int time)
         {
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(time);
@@ -24,6 +27,7 @@ namespace SkillsSwap.Base
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeOutinSeconds));
             return (wait.Until(ExpectedConditions.ElementIsVisible(by)));
         }
+        #endregion
         //ExtentReports
         #region reports
         public static ExtentTest test;

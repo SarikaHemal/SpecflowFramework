@@ -492,6 +492,8 @@
     <Compile Include="Base\SaveScreenShot.cs" />
     <Compile Include="Base\CommonMethod.cs" />
     <Compile Include="Pages\ProfilePage.cs" />
+    <Compile Include="Steps\ProfileCertificateSteps.cs" />
+    <Compile Include="Steps\ProfileEditSteps.cs" />
     <Compile Include="Steps\ProfileEducationSteps.cs" />
     <Compile Include="Steps\ProfileLanguageStep.cs" />
     <Compile Include="Steps\ProfileSkillSteps.cs" />
@@ -509,6 +511,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Feature\ProfileCertificate.feature" />
+    <None Include="Feature\ProfileEdit.feature" />
     <None Include="Feature\ProfileEducation.feature" />
     <None Include="Feature\ProfileLanguage.feature" />
     <None Include="Feature\ProfileSkills.feature" />
