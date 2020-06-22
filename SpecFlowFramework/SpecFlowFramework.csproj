@@ -510,6 +510,7 @@
     <Compile Include="Hooks\TestFixture.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="API\json1.json" />
     <None Include="App.config" />
     <None Include="Feature\ProfileCertificate.feature" />
     <None Include="Feature\ProfileEdit.feature" />

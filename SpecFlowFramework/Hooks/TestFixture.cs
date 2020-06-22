@@ -32,19 +32,20 @@ namespace SpecFlowFramework
         public static void Main()
         { }
 
+        //[BeforeFeature]
+        //public static void BeforeFeature()
+        //{
+        //    CommonMethod.ExtentReports();
+        //}
+
+
         [BeforeFeature]
-        public static void BeforeFeature()
-        {
-            CommonMethod.ExtentReports();
-        }
-
-
-        [BeforeScenario]
         [Obsolete]
-        public void BeforeScenario(ScenarioContext scenarioContext)
+        public static void BeforeScenario(IWebDriver driver,IObjectContainer objectContainer)
         {
             //var init =new FrameworkHooks();
             //.IntialSetup(objectContainer);
+            CommonMethod.ExtentReports();
             driver = new ChromeDriver();
             objectContainer.RegisterInstanceAs(driver);
             driver.Manage().Window.Maximize();
